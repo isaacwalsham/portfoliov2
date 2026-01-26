@@ -1,0 +1,143 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --rule: rgba(0, 0, 0, 0.2);
+  --chip: lightgrey;
+  --chip-hover: rgb(195, 195, 195);
+  --muted: #666;
+}
+
+body[data-theme="dark"] {
+  --bg: #0e1116;
+  --text: #e6e8eb;
+  --rule: rgba(230, 232, 235, 0.2);
+  --chip: rgba(255, 255, 255, 0.12);
+  --chip-hover: rgba(255, 255, 255, 0.2);
+  --muted: #9aa0aa;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.avatar {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0 1.2rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+.projects h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  margin: 1.5rem 0;
+}
+
+.projects h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.projects p {
+  margin: 0.4rem 0 0;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+.links {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.cv {
+  margin-top: 2rem;
+}
+
+.cv a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--chip);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.cv a:hover {
+  background: var(--chip-hover);
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1.25rem;
+  }
+
+  .theme-toggle {
+    top: -4px;
+    right: -4px;
+  }
+}
