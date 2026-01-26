@@ -15,11 +15,13 @@
     <h1 class="name">Isaac Walsham</h1>
     <img class="avatar" src="isaacheadshot.png" alt="Isaac Walsham" />
 
-    <p>Hi, I'm Isaac 👋🏻, </p> <br>
-    <p>I'm currently doing my Computer Science Undergrad at UEA, </p>
-    <p>I'm now looking for a Summer 2026 Internship.</p> <br>
-    <p>Follow my work on:
-      <a href="https://github.com/isaacwalsham" target="_blank" rel="noopener noreferrer">GitHub |</a>
+    <p>Hi, I'm Isaac 👋🏻</p>
+    <p>I'm currently doing my Computer Science Undergrad at UEA.</p>
+    <p>I'm now looking for a Summer 2026 Internship.</p>
+
+    <p>
+      Follow my work on
+      <a href="https://github.com/isaacwalsham" target="_blank" rel="noopener noreferrer">GitHub</a> |
       <a href="https://www.linkedin.com/in/isaacwalsham/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
 
@@ -27,29 +29,50 @@
 
     <section class="projects">
       <h2>My Work</h2>
+
       <ul>
         <li>
-          <h4><a href="https://physiquepilot.com" target="_blank" rel="noopener noreferrer">Physique Pilot</a></h4>
-          <br>
-          <p>I am in the process of creating an AI driven bodybuilding and fitness application, with oversight from The Enterprise Centre at UEA.</p>
-          <br><br>
-          <p>Please note that this is still being developed and features are being updated on a weekly basis.</p>
-        </li>
+          <h4>
+            <a href="https://physiquepilot.com" target="_blank" rel="noopener noreferrer">
+              Physique Pilot
+            </a>
+          </h4>
 
-        <li>
-          <h4><a href="https://github.com/isaacwalsham/search-engine" target="_blank" rel="noopener noreferrer">Search Engine</a></h4>
-          <br>
           <p>
-            This is an interesting piece of coursework that I completed for my second year studies at UEA.
-            <br><br>
-            Have a look at the README file for more information about the engine and how to run tests on your own datasets.
+            I am in the process of creating an AI driven bodybuilding and fitness application,
+            with oversight from The Enterprise Centre at UEA.
+          </p>
+          <p>
+            Please note that this is still being developed and features are being updated on a weekly basis.
           </p>
         </li>
 
         <li>
-          <h4><a href="https://helloautomate.co.uk" target="_blank" rel="noopener noreferrer">Hello Automate</a></h4>
-          <br>
-          <p>Designed and implemented a client-facing landing page optimized for lead generation.</p>
+          <h4>
+            <a href="https://github.com/isaacwalsham/search-engine" target="_blank" rel="noopener noreferrer">
+              Search Engine
+            </a>
+          </h4>
+
+          <p>
+            This is an interesting piece of coursework that I completed for my second year studies at UEA.
+          </p>
+          <p>
+            Have a look at the README file for more information about the engine and how to run tests
+            on your own datasets.
+          </p>
+        </li>
+
+        <li>
+          <h4>
+            <a href="https://helloautomate.co.uk" target="_blank" rel="noopener noreferrer">
+              Hello Automate
+            </a>
+          </h4>
+
+          <p>
+            Designed and implemented a client-facing landing page optimized for lead generation.
+          </p>
         </li>
       </ul>
     </section>
@@ -57,7 +80,9 @@
     <hr>
 
     <section class="cv">
-      <a href="IsaacWalshamCV.pdf" target="_blank" rel="noopener noreferrer" download>Download my CV</a>
+      <a href="IsaacWalshamCV.pdf" target="_blank" rel="noopener noreferrer" download>
+        Download my CV
+      </a>
     </section>
 
     <footer>
@@ -74,7 +99,8 @@
       document.body.dataset.theme = savedTheme || "light";
 
       const setIcon = () => {
-        btn.textContent = document.body.dataset.theme === "dark" ? "☀️" : "🌙";
+        btn.textContent =
+          document.body.dataset.theme === "dark" ? "☀️" : "🌙";
       };
 
       setIcon();
@@ -82,7 +108,6 @@
       btn.addEventListener("click", () => {
         document.body.dataset.theme =
           document.body.dataset.theme === "dark" ? "light" : "dark";
-
         localStorage.setItem("theme", document.body.dataset.theme);
         setIcon();
       });
